@@ -18,7 +18,7 @@ PrimeraAPP.propTypes = {
 }
 
 PrimeraAPP.defaultProps = {
-  subtitulo: ""
+  subtitulo: "Default"
 }
 
 export default PrimeraAPP;
