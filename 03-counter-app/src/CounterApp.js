@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,  PropTypes } from 'react';
 import PropTypes from 'prop-types';
 
 const CounterApp = ({ value }) => {
