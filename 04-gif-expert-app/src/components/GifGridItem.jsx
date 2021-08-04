@@ -1,9 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
+const GifGridItem = ({ id, title, url }) => {
 
-const GifGrifItem = ({ id, title, url }) => {
-
-  console.log({ id, title, url });
+  // console.log({ id, title, url });
 
   return (
     <div className="card animate__animated animate__fadeIn">
@@ -13,4 +13,18 @@ const GifGrifItem = ({ id, title, url }) => {
   );
 };
 
-export default GifGrifItem;
+export default GifGridItem;
+
+GifGridItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
+};
+
+/**
+ * 1. Enzyme
+ * 2. Enzyme to Json
+ * 3. Debe de mostrar el componente correctamente
+ *  * shallow
+ *  wrapper
+ *  wrapper .toMatchSnapshot()
+*/
